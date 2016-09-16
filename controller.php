@@ -1,14 +1,14 @@
 <?php
-namespace Concrete\Package\InfoTownTable;
+namespace Concrete\Package\InfotownTable;
 
 use Package;
 use BlockType;
 
 /**
- * InfoTown Table
+ * Infofown Table
  *
  * @category   Interface Elements
- * @package    InfoTown Table
+ * @package    Infotown Table
  * @author     Hiroshi Sawai <info@info-town.jp>
  * @copyright  2016 Hiroshi Sawai
  */
@@ -16,7 +16,7 @@ class Controller extends Package
 {
     protected $pkgHandle = 'infotown_table';
     protected $appVersionRequired = '5.7.5.8';
-    protected $pkgVersion = '0.9.0';
+    protected $pkgVersion = '0.9.1';
     protected $pkgAutoloaderMapCoreExtensions = true;
 
     public function getPackageDescription()
@@ -26,7 +26,7 @@ class Controller extends Package
 
     public function getPackageName()
     {
-        return t('InfoTown Table');
+        return t('Infotown Table');
     }
 
     public function install()

@@ -1,4 +1,4 @@
-# InfoTown Table
+# Infotown Table
 
 This document is written in English and Japanese.  
 本ドキュメントは英語と日本語で記載します。

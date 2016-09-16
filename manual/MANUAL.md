@@ -1,4 +1,4 @@
-# InfoTown Table
+# Infotown Table
 
 ## Summary
 
