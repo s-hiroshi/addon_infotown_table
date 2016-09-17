@@ -136,7 +136,7 @@ $tp = new TaskPermission();
                         <?php if ($j === 0): ?>
                             <span class="it-table-context">
                                         <a class="it-table-show-context btn btn-default btn-sm" href="#"><i
-                                                class="fa fa-cog" aria-hidden="true"></i> Settings</a>
+                                                class="fa fa-cog" aria-hidden="true"></i> <?php echo t('Settings'); ?></a>
                                         <ul class="it-table-context-menu it-table-display-none">
                                             <li class="it-table-add-row"><i class="fa fa-plus"
                                                                             aria-hidden="true"></i>&emsp;<?php echo t(
