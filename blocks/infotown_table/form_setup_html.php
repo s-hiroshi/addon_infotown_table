@@ -92,7 +92,7 @@ $tp = new TaskPermission();
                value="<?php echo $colsLength; ?>"<?php echo $disabled; ?>>
         <input type="hidden" type="text" name="colsLength" value="<?php echo $colsLength; ?>">
         <?php if (empty( $rows )): ?>
-            <button class="it-table-toolbar-make btn btn-default"><?php echo t('Make Table'); ?></button>
+            <button class="it-table-toolbar-make btn btn-default"><?php echo t('Create Table'); ?></button>
         <?php endif; ?>
         <button class="it-table-toolbar-preview btn btn-default"><?php echo t('Preview Table'); ?></button>
     </div>

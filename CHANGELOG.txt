@@ -1,6 +1,10 @@
+0.9.3
+Fix version required from 5.7.5.8 to 5.7.4 in controller.
+Change button label form "Make Table" to "Create Table".
+
 0.9.2
 Fix the oversight to have to use t function.
-Separate manual to english version and japanese version.
+Separate manual to English version and Japanese version.
 
 0.9.1
 Fix name space from InfoTownTable to InfotownTable.
