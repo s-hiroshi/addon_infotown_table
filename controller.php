@@ -15,8 +15,8 @@ use BlockType;
 class Controller extends Package
 {
     protected $pkgHandle = 'infotown_table';
-    protected $appVersionRequired = '5.7.5.8';
-    protected $pkgVersion = '0.9.2';
+    protected $appVersionRequired = '5.7.4';
+    protected $pkgVersion = '0.9.3';
     protected $pkgAutoloaderMapCoreExtensions = true;
 
     public function getPackageDescription()
