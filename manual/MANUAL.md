@@ -7,27 +7,25 @@
 
 ### Summary
 
-This program provides an easy way to make a table by intuitive User Interface.  
+This intuitive User Interface makes it easy to create tables.
 
-### Make/Edit/Preview/Output table
+### Create/Edit/Preview/Output table
 
-In the following example, it makes 2 rows and 3 columns table.
+In the following example a table with 2 rows and 3 columns is created.
 
-#### (1) Make table schema. 
+#### (1) Create table schema. 
 
-You input 2 to Row area and input 3 to Col area.
+Enter '2' in the 'Row' and '3' in the 'Col' fields.
 
 <img src="screenshot-toolbar.png">
 
-You click "Make Table" button, then 2 rows and 3 columns table schema is made.
+Click the 'Create Table' button to continue to the table.
 
-<img src="screenshot-make-table.png">
+<img src="screenshot-create-table.png">
 
 #### (2) Input data to cell.
 
-You click "Edit" button, then Edit data dialog is shown.
-In the following example, You click first "Edit" button,  
-then You input "This is sample" to text area and click "Save Data" button.
+Use the 'Edit' buttons to change the content of the cells.
 
 <img src="screenshot-entry-dialog.png">
 
@@ -35,25 +33,24 @@ Cells to which the data has been entered changes to orange color.
 
 <img src="screenshot-first-filled.png">
 
-In the following example, All cell is filled with data.
+In the following example, All cells have data. 
 
 <img src="screenshot-all-filled.png">
 
 #### (3) Preview Table.
 
-You click "Preview Table" button.
+Click on 'Preview Table' to see the results.
 
 <img src="screenshot-2nd-preview.png">
 
-#### (4) Save data to database.
+#### (4) Save the table.
 
-Just click the "Save Data" button data has not yet been saved to the database .  
-When "Save" button that is blue button is clicked, Data will be saved to the database.
+Just click the 'Save Data' button data has not yet been saved to the database .  
+When 'Save' button that is blue button is clicked, Data will be saved to the database.
 
 #### (5) Edit data.
 
-In the following example, You edit second cell data.  
-You click second "Edit" button then edit dialog is shown.
+You can edit the data by using the 'Edit' buttons again.
 
 <img src="screenshot-edit-2nd.png">
 
@@ -61,11 +58,11 @@ In the following example, to change the text from "This is sample data2." to "Th
 
 <img src="screenshot-edit-2nd-edit.png">
 
-When You click "Preview Table" button, The changes are reflected.
+When You click 'Preview Table' button, The changes are reflected.
 
 <img src="screenshot-2nd-preview.png">
 
-You click "Save" button (blue button), then the changes will be saved to the database.
+You click 'Save' button (blue button), then the changes will be saved to the database.
 
 #### (6) Output table.
 
@@ -77,13 +74,13 @@ This program will output the table as shown below to the visitors.
 
 <img src="screenshot-output-small.png">
 
-If, for example, you use elemental theme, then it is shown below.
+If you are using the elemental theme, it would look like below.
 
 <img src="screenshot-output-big.png">
 
-### Modify schema(Context Menu)
+#### (7) Modify schema(Context Menu)
 
-You click "settings" button, then context menu is shown.
+The 'Settings' button will give you the following context menu.
 
 <img src="screenshot-context-menu.png">
 
@@ -130,14 +127,13 @@ Row入力域へ2、列入力域へ3を入力します。
 
 <img src="screenshot-toolbar.png">
 
-"Make Table"ボタンをクリックすると2行3列のテーブルが作成されます。
+"Create Table"ボタンをクリックすると2行3列のテーブルが作成されます。
 
-<img src="screenshot-make-table.png">
+<img src="screenshot-create-table.png">
 
 #### (2) データ入力
 
-各"Edit"ボタンをクリックするとデータ入力ダイアログが表示されます。  
-例として最初の"Edit"ボタンをクリックし"This is sample"と入力し"Save Data"ボタンをクリックします。
+セルの内容を編集するには'Edit'ボタンを使います。
 
 <img src="screenshot-entry-dialog.png">
 
@@ -151,31 +147,30 @@ Row入力域へ2、列入力域へ3を入力します。
 
 #### (3) テーブルプレビュー
 
-"Preview Table"ボタンをクリックします。
+'Preview Table'ボタンをクリックします。
 
 <img src="screenshot-2nd-preview.png">
 
 ### (4) データ保存
 
-"Save Data"をクリックしただけではデータはデータベースへ保存されません。  
-青色の"Save"ボタンをクリックするとデータがデータベースへ保存されます。
+'Save Data'をクリックしただけではデータはデータベースへ保存されません。  
+青色の'Save'ボタンをクリックするとデータがデータベースへ保存されます。
 
 ### (5) データ編集
 
-下記例で2番目のセルを編集します。
-2番目の"Edit"ボタンをクリックすると編集ダイアログが表示されます。
+データの編集は'Edit'ボタンを再度クリックします。
 
 <img src="screenshot-edit-2nd.png">
 
-下記例はテキストを"This is sample data2."から"This is edit data2."へ変更します。
+下記例はテキストを'This is sample data2.'から'This is edit data2.'へ変更します。
 
 <img src="screenshot-edit-2nd-edit.png">
 
-"Preview Table"ボタンをクリックすると、変更が反映されいます。
+'Preview Table'ボタンをクリックすると、変更が反映されいます。
 
 <img src="screenshot-2nd-preview.png">
 
-"Save"ボタン(青色)をクリックすると変更がデータベースへ保存されます。
+'Save'ボタン(青色)をクリックすると変更がデータベースへ保存されます。
 
 #### (6) テーブル表示.
 
@@ -191,9 +186,9 @@ Row入力域へ2、列入力域へ3を入力します。
 
 <img src="screenshot-output-big.png">
 
-### テーブル構成変更(メニュー)
+#### (7) テーブル構成変更(メニュー)
 
-行、列の先頭にある"Settings"ボタンをクリックするとメニューが表示されます。
+行、列の先頭にある'Settings'ボタンをクリックするとメニューが表示されます。
 
 <img src="screenshot-context-menu.png">
 
