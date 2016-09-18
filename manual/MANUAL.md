@@ -106,9 +106,9 @@ The 'Settings' button will give you the following context menu.
 * Data is empty.  
   <img src="screenshot-data-empty.png">
 * Data is TH (Table Header).  
-  Label "Edit"  is italic.  
+  Label "Edit"  is bold.  
 * Data is TD (Table Data).  
-  Label "Edit" is not italic.  
+  Label "Edit" is not bold.  
 
 
 ## <a name="ja">日本語</a>
@@ -214,5 +214,5 @@ Row入力域へ2、列入力域へ3を入力します。
   <img src="screenshot-data-fill.png">
 * データが未入力の状態です。  
   <img src="screenshot-data-empty.png">
-* TH (Table Header)は"Edit"ラベルがイタリックになります。
+* TH (Table Header)は"Edit"ラベルが太字になります。
 * TD (Table Data)は"Edit"ラベルがノーマルです。
