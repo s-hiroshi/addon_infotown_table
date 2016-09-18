@@ -1,3 +1,6 @@
+0.9.4
+Fix deprecated code.
+
 0.9.3
 Fix version required from 5.7.5.8 to 5.7.4 in controller.
 Change button label form "Make Table" to "Create Table".
