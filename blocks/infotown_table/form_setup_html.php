@@ -174,9 +174,9 @@ $tp = new TaskPermission();
                         <span class="btn btn-default it-table-entry <?php echo $dataType . $filledClass; ?>">
                                 <?php echo t('Edit'); ?> <i class="fa <?php echo $editIcon; ?>" aria-hidden="true"></i>
                                 <input type="hidden" name="content[]"
-                                       value="<?php echo $rows[$i * $colsLength + $j]['content']; ?>">
+                                       value="<?php echo h($rows[$i * $colsLength + $j]['content']); ?>">
                                       <input type="hidden" name="th[]"
-                                             value="<?php echo $rows[$i * $colsLength + $j]['th']; ?>">
+                                             value="<?php echo h($rows[$i * $colsLength + $j]['th']); ?>">
                             </span>
                     <?php endfor; ?>
                 </div>
