@@ -5,9 +5,9 @@
             <tr>
                 <?php for ($j = 0; $j < $colsLength; $j++) : ?>
                     <?php if ((string)$rows[$i * $colsLength + $j]['th'] === 'true') : ?>
-                        <th><?php echo $rows[$i * $colsLength + $j]['content'] ?></th>
+                        <th><?php echo h($rows[$i * $colsLength + $j]['content']); ?></th>
                     <?php else : ?>
-                        <td><?php echo $rows[$i * $colsLength + $j]['content'] ?></td>
+                        <td><?php echo h($rows[$i * $colsLength + $j]['content']); ?></td>
                     <?php endif; ?>
                 <?php endfor; ?>
             </tr>
