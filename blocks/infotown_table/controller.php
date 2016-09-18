@@ -56,14 +56,14 @@ class Controller extends BlockController
         $this->add();
 
         $db    = Database::connection();
-        $query = $db->GetAll('SELECT * from btInfotownTableEntries WHERE bID = ?', array($this->bID));
+        $query = $db->fetchAll('SELECT * from btInfotownTableEntries WHERE bID = ?', array($this->bID));
         $this->set('rows', $query);
     }
 
     public function view()
     {
         $db    = Database::connection();
-        $query = $db->GetAll('SELECT * from btInfotownTableEntries WHERE bID = ?', array($this->bID));
+        $query = $db->fetchAll('SELECT * from btInfotownTableEntries WHERE bID = ?', array($this->bID));
         $this->set('rows', $query);
     }
 
@@ -74,7 +74,7 @@ class Controller extends BlockController
         $q  = 'select * from btInfotownTableEntries where bID = ?';
         $r  = $db->query($q, $v);
         foreach ($r as $row) {
-            $db->execute(
+            $db->executeQuery(
                 'INSERT INTO btInfotownTableEntries (bID, content, th) values(?,?,?)',
                 array(
                     $newBID,
@@ -88,19 +88,19 @@ class Controller extends BlockController
     public function delete()
     {
         $db = Database::connection();
-        $db->execute('DELETE from btInfotownTableEntries WHERE bID = ?', array($this->bID));
+        $db->executeQuery('DELETE from btInfotownTableEntries WHERE bID = ?', array($this->bID));
         parent::delete();
     }
 
     public function save($args)
     {
         $db = Database::connection();
-        $db->execute('DELETE from btInfotownTableEntries WHERE bID = ?', array($this->bID));
+        $db->executeQuery('DELETE from btInfotownTableEntries WHERE bID = ?', array($this->bID));
         $count = $args['rowsLength'] * $args['colsLength'];
         $i     = 0;
         parent::save($args);
         while ($i < $count) {
-            $db->execute(
+            $db->executeQuery(
                 'INSERT INTO btInfotownTableEntries (bID, content, th) values(?,?,?)',
                 array(
                     $this->bID,
