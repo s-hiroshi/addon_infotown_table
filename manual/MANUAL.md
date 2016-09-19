@@ -15,10 +15,7 @@ In the following example a table with 2 rows and 3 columns is created.
 
 #### (1) Create table schema. 
 
-Enter '2' in the 'Row' and '3' in the 'Col' fields.
-
-<img src="screenshot-toolbar.png">
-
+Enter '2' in the 'Row' and '3' in the 'Col' fields.  
 Click the 'Create Table' button to continue to the table.
 
 <img src="screenshot-create-table.png">
@@ -30,9 +27,6 @@ Use the 'Edit' buttons to change the content of the cells.
 <img src="screenshot-entry-dialog.png">
 
 Cells to which the data has been entered changes to orange color.
-
-<img src="screenshot-first-filled.png">
-
 In the following example, All cells have data. 
 
 <img src="screenshot-all-filled.png">
@@ -41,12 +35,14 @@ In the following example, All cells have data.
 
 Click on 'Preview Table' to see the results.
 
-<img src="screenshot-2nd-preview.png">
+<img src="screenshot-preview.png">
 
 #### (4) Save the table.
 
 Just click the 'Save Data' button data has not yet been saved to the database .  
 When 'Save' button that is blue button is clicked, Data will be saved to the database.
+
+<img src="screenshot-save.png">
 
 #### (5) Edit data.
 
@@ -149,7 +145,7 @@ Row入力域へ2、列入力域へ3を入力します。
 
 'Preview Table'ボタンをクリックします。
 
-<img src="screenshot-2nd-preview.png">
+<img src="screenshot-preview.png">
 
 ### (4) データ保存
 
