@@ -1,7 +1,7 @@
 <?php defined('C5_EXECUTE') or die( "Access Denied." );
 
-$fp = FilePermissions::getGlobal();
-$tp = new TaskPermission();
+$fp = new Permissions(FileSet::getGlobal());
+$tp = new Permissions();
 ?>
 
 <style>
