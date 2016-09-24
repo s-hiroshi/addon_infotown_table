@@ -21,7 +21,7 @@ class Controller extends Package
 
     public function getPackageDescription()
     {
-        return t('Add Bootstrap base table block.');
+        return t('Add table block.');
     }
 
     public function getPackageName()
