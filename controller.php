@@ -5,7 +5,7 @@ use Package;
 use BlockType;
 
 /**
- * Infofown Table
+ * Infotown Table
  *
  * @category   Interface Elements
  * @package    Infotown Table
