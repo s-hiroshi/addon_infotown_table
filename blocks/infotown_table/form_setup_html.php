@@ -1,8 +1,4 @@
-<?php defined('C5_EXECUTE') or die( "Access Denied." );
-
-$fp = new Permissions(FileSet::getGlobal());
-$tp = new Permissions();
-?>
+<?php defined('C5_EXECUTE') or die( "Access Denied." ); ?>
 
 <style>
     .it-table {
