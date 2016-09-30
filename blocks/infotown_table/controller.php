@@ -35,7 +35,7 @@ class Controller extends BlockController
         $content = '';
         $db      = Database::connection();
         $v       = array($this->bID);
-        $q       = 'select * from btInfotownTableEntries where bID = ?';
+        $q       = 'SELECT * FROM btInfotownTableEntries WHERE bID = ?';
         $r       = $db->query($q, $v);
         foreach ($r as $row) {
             $content .= $row['content'];
@@ -56,14 +56,14 @@ class Controller extends BlockController
         $this->add();
 
         $db    = Database::connection();
-        $query = $db->fetchAll('SELECT * from btInfotownTableEntries WHERE bID = ?', array($this->bID));
+        $query = $db->fetchAll('SELECT * FROM btInfotownTableEntries WHERE bID = ?', array($this->bID));
         $this->set('rows', $query);
     }
 
     public function view()
     {
         $db    = Database::connection();
-        $query = $db->fetchAll('SELECT * from btInfotownTableEntries WHERE bID = ?', array($this->bID));
+        $query = $db->fetchAll('SELECT * FROM btInfotownTableEntries WHERE bID = ?', array($this->bID));
         $this->set('rows', $query);
     }
 
@@ -71,11 +71,11 @@ class Controller extends BlockController
     {
         $db = Database::connection();
         $v  = array($this->bID);
-        $q  = 'select * from btInfotownTableEntries where bID = ?';
+        $q  = 'SELECT * FROM btInfotownTableEntries WHERE bID = ?';
         $r  = $db->query($q, $v);
         foreach ($r as $row) {
             $db->executeQuery(
-                'INSERT INTO btInfotownTableEntries (bID, content, th) values(?,?,?)',
+                'INSERT INTO btInfotownTableEntries (bID, content, th) VALUES(?,?,?)',
                 array(
                     $newBID,
                     $row['content'],
@@ -88,20 +88,20 @@ class Controller extends BlockController
     public function delete()
     {
         $db = Database::connection();
-        $db->executeQuery('DELETE from btInfotownTableEntries WHERE bID = ?', array($this->bID));
+        $db->executeQuery('DELETE FROM btInfotownTableEntries WHERE bID = ?', array($this->bID));
         parent::delete();
     }
 
     public function save($args)
     {
         $db = Database::connection();
-        $db->executeQuery('DELETE from btInfotownTableEntries WHERE bID = ?', array($this->bID));
+        $db->executeQuery('DELETE FROM btInfotownTableEntries WHERE bID = ?', array($this->bID));
         $count = $args['rowsLength'] * $args['colsLength'];
         $i     = 0;
         parent::save($args);
         while ($i < $count) {
             $db->executeQuery(
-                'INSERT INTO btInfotownTableEntries (bID, content, th) values(?,?,?)',
+                'INSERT INTO btInfotownTableEntries (bID, content, th) VALUES(?,?,?)',
                 array(
                     $this->bID,
                     $args['content'][$i],
