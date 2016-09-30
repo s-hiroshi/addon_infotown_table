@@ -1,5 +1,6 @@
 0.9.6
-Remove unused code in form_setup_html.php
+Remove unused code in form_setup_html.php.
+Change keywords of the SQL statement from lower case to upper case.
 
 0.9.5
 Fix deprecated code.
