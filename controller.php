@@ -3,6 +3,7 @@ namespace Concrete\Package\InfotownTable;
 
 use Package;
 use BlockType;
+use Concrete\Core\Asset\AssetList;
 
 /**
  * Infotown Table
@@ -33,5 +34,17 @@ class Controller extends Package
     {
         $pkg = parent::install();
         BlockType::installBlockType('infotown_table', $pkg);
+    }
+
+    public function on_start()
+    {
+        $al = AssetList::getInstance();
+        $al->register(
+            'css',
+            'infotown_table',
+            'blocks/infotown_table/view.css',
+            array(),
+            'infotown_table'
+        );
     }
 }

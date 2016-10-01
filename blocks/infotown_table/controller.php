@@ -44,17 +44,8 @@ class Controller extends BlockController
         return $content;
     }
 
-    public function add()
-    {
-        $this->requireAsset('core/file-manager');
-        $this->requireAsset('core/sitemap');
-        $this->requireAsset('redactor');
-    }
-
     public function edit()
     {
-        $this->add();
-
         $db    = Database::connection();
         $query = $db->fetchAll('SELECT * FROM btInfotownTableEntries WHERE bID = ?', array($this->bID));
         $this->set('rows', $query);
@@ -110,5 +101,10 @@ class Controller extends BlockController
             );
             ++$i;
         }
+    }
+
+    public function registerViewAssets()
+    {
+        $this->requireAsset('css', 'infotown_table');
     }
 }

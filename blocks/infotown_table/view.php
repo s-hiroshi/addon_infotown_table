@@ -1,6 +1,6 @@
 <?php defined('C5_EXECUTE') or die( "Access Denied." ); ?>
 <?php if (count($rows) > 0 && $rowsLength > 0 && $colsLength > 0) : ?>
-    <table>
+    <table class="it-table-view">
         <?php for ($i = 0; $i < $rowsLength; $i++) : ?>
             <tr>
                 <?php for ($j = 0; $j < $colsLength; $j++) : ?>

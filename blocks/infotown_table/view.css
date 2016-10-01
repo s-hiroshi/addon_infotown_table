@@ -1,0 +1,12 @@
+.it-table-view {
+  margin-bottom: 20px;
+}
+
+.it-table-view th {
+  font-weight: bold;
+  padding: 3px 5px;
+}
+
+.it-table-view td {
+  padding: 3px 5px;
+}
