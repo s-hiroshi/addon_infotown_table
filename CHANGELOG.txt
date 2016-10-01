@@ -1,3 +1,7 @@
+0.9.7
+Remove table.min.js that is unused.
+Add view.css for front side table style.
+
 0.9.6
 Remove unused code in form_setup_html.php.
 Change keywords of the SQL statement from lower case to upper case.
