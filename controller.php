@@ -17,7 +17,7 @@ class Controller extends Package
 {
     protected $pkgHandle = 'infotown_table';
     protected $appVersionRequired = '5.7.4';
-    protected $pkgVersion = '0.9.7';
+    protected $pkgVersion = '0.9.8';
     protected $pkgAutoloaderMapCoreExtensions = true;
 
     public function getPackageDescription()
@@ -34,17 +34,5 @@ class Controller extends Package
     {
         $pkg = parent::install();
         BlockType::installBlockType('infotown_table', $pkg);
-    }
-
-    public function on_start()
-    {
-        $al = AssetList::getInstance();
-        $al->register(
-            'css',
-            'infotown_table',
-            'blocks/infotown_table/view.css',
-            array(),
-            'infotown_table'
-        );
     }
 }
