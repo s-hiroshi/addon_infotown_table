@@ -63,17 +63,22 @@
         display: none;
     }
 
+    .ccm-ui .it-table-schema .btn {
+        font-weight: normal;
+    }
+
     .it-table-th {
         font-weight: bold !important;
     }
 
     .it-table-td {
-        font-weight: normal;
+        font-weight: normal !important;
     }
 
     .it-table-data-fill {
         color: #ff9900 !important;
     }
+
     .it-table-preview {
         margin-bottom: 20px;
     }

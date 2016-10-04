@@ -1,3 +1,9 @@
+0.9.8
+Display alert when table is created by 0 row or 0 columns.
+Use a simple textarea to edit data instead of the dialog.
+Fix error on PHP7.
+
+
 0.9.7
 Remove table.min.js that is unused.
 Add view.css for front side table style.
