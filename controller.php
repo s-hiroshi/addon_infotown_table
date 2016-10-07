@@ -3,7 +3,6 @@ namespace Concrete\Package\InfotownTable;
 
 use Package;
 use BlockType;
-use Concrete\Core\Asset\AssetList;
 
 /**
  * Infotown Table
