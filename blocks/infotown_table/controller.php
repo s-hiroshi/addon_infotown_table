@@ -4,7 +4,6 @@ namespace Concrete\Package\InfotownTable\Block\InfotownTable;
 
 use Concrete\Core\Block\BlockController;
 use Database;
-use Concrete\Core\Asset\AssetList;
 
 class Controller extends BlockController
 {
@@ -21,17 +20,6 @@ class Controller extends BlockController
     protected $btCacheBlockOutputOnPost = true;
     protected $btCacheBlockOutputForRegisteredUsers = true;
 
-    public function on_start()
-    {
-        $al = AssetList::getInstance();
-        $al->register(
-            'css',
-            'infotown_table',
-            'blocks/infotown_table/view.css',
-            array(),
-            'infotown_table'
-        );
-    }
     public function getBlockTypeDescription()
     {
         return t("Infotown Table Block");
@@ -113,10 +101,5 @@ class Controller extends BlockController
             );
             ++$i;
         }
-    }
-
-    public function registerViewAssets($outputContent = '')
-    {
-        $this->requireAsset('css', 'infotown_table');
     }
 }
