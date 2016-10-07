@@ -10,7 +10,6 @@
     </field>
     <field name="rowsLength" type="integer"/>
     <field name="colsLength" type="integer"/> 
-    <field name="blockTitle" type="string" size="255"/>
   </table>
 
   <table name="btInfotownTableEntries">
