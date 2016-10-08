@@ -95,6 +95,9 @@
         margin: 0.5em 0;
         padding: 0.25em 1em;
     }
+    .it-table-text-right {
+        text-align: right;
+    }
 </style>
 
 <div class="it-table">
