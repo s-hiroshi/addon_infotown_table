@@ -1,3 +1,7 @@
+0.9.9
+Improve usability of the edit dialog form.
+Remove unused code.
+
 0.9.8
 Display alert when table is created by 0 row or 0 columns.
 Use a simple textarea to edit data instead of the dialog.
