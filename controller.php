@@ -16,7 +16,7 @@ class Controller extends Package
 {
     protected $pkgHandle = 'infotown_table';
     protected $appVersionRequired = '5.7.4';
-    protected $pkgVersion = '0.9.9';
+    protected $pkgVersion = '1.0.0';
     protected $pkgAutoloaderMapCoreExtensions = true;
 
     public function getPackageDescription()
